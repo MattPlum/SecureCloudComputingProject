@@ -1,5 +1,6 @@
 import Button from "@material-tailwind/react/Button";
 import Icon from "@material-tailwind/react/Icon";
+import { signOut } from "next-auth/client";
 
 function Header() {
     return <header className='sticky top-0 z-50 flex items-center px-4 py-2
@@ -42,6 +43,15 @@ function Header() {
         src="https://www.vhv.rs/dpng/d/82-829950_college-student-cartoon-png-transparent-png.png"
         alt=""
         />
+    <button
+  onClick={() =>
+    signOut({
+      callbackUrl: `${window.location.origin}`
+    })
+  }
+>
+  Sign out
+</button>
 
 </header>
 }
