@@ -30,8 +30,6 @@ Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&ut
 
 ## This project steps taken to create and how to use
 
-Created with:
-Execute [`create-next-app`]
 Installed Dependencies with:
 Execute [`yarn add next-auth`]
 Execute [`yarn add firebase`]
