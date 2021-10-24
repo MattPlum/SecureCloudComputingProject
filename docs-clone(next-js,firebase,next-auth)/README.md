@@ -34,9 +34,10 @@ Installed Dependencies with:
 Execute [`yarn add next-auth`]
 Execute [`yarn add firebase`]
 
-You will need to replace the firebaseConfig variable in firebase.js with the info given on console.firebase.com. You will also need to replace the client_secret.json file with that of the one downloaded from GCP after adding redirect uri.
+You will need to replace the firebaseConfig variable in firebase.js with the info given on console.firebase.com. You will also need to replace the client_secret.json file with that of the one downloaded from GCP after adding redirect uri. You will also need to replace .env.local variables. Please check
+file for what is needed.
 
-Once replacing the config on firebase.js with the one given on the firebase console and getting the client_secret.json file from GCP to replace in the root directory we can run the project on our terminal with:
+Once replacing the config on firebase.js with the one given on the firebase console, getting the client_secret.json file from GCP to replace in the root directory, and adding the .env.local variables we can run the project on our terminal with:
 Execute [`yarn run dev`]
 Once this executes if done correctly you will see, ready, info, wait, and event statuses popping also showing a local url where the app is being run.
 
