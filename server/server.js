@@ -5,8 +5,6 @@ const Document = require("./Document")
 mongoose.connect("mongodb://localhost/google-docs-clone", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  useFindAndModify: false,
-  useCreateIndex: true,
 })
 
 const io = require("socket.io")(3001, {
