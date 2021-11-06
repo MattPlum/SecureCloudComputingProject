@@ -25,3 +25,5 @@ Open http://localhost:3000 to view it in the browser.
 
 You can run this to install all dependencies in package.json prior to starting the app:
 ### `yarn`
+
+Adjustments must be made in .env.local file to change from deployed website to localhost in order to run in development.
