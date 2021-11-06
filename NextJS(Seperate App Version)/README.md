@@ -30,9 +30,8 @@ Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&ut
 
 ## This project steps taken to create and how to use
 
-Installed Dependencies with:
-Execute [`yarn add next-auth`]
-Execute [`yarn add firebase@8.7.1`]
+Install all dependencies from package.json with:
+Execute [`yarn`]
 Firebase 9 is the latest version but it still has issues with implementation of next-auth. Works as should with any previous version before 9.
 
 You will need to replace the firebaseConfig variable in firebase.js with the info given on console.firebase.com. You will also need to replace the client_secret.json file with that of the one downloaded from GCP after adding redirect uri. You will also need to replace .env.local variables. Please check
