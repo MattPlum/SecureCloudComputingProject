@@ -1,7 +1,7 @@
 # Secure CloudComputing Project
 <b>Description</b>: <br> Google Docs Cloud Application for CCNY Secure Cloud Computing Class.<br />
 <br>
-<b>Group Members</b> : <br> Matthew Lee, Arun Misir, Noshin Zaman, Ahmed Jahangir"
+<b>Group Members</b> : <br> Matthew Lee, Arun Misir, Noshin Zaman, Ahmed Jahangir
 
 ## Available Scripts for server client
 In the project's client directory, you can run:
