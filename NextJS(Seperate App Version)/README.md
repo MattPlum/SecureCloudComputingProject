@@ -41,4 +41,5 @@ file for what is needed.
 Once replacing the config on firebase.js with the one given on the firebase console, getting the client_secret.json file from GCP to replace in the root directory, and adding the .env.local variables we can run the project on our terminal with:
 Execute [`yarn run dev`]
 Once this executes if done correctly you will see, ready, info, wait, and event statuses popping also showing a local url where the app is being run.
-
+Execute [`yarn`]
+If need to install dependencies from package.json
