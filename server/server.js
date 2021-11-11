@@ -1,11 +1,23 @@
 const mongoose = require("mongoose")
 const Document = require("./Document")
+const path = require("path")
 
 //mongoose connection for persisting documents
 mongoose.connect("mongodb://localhost/google-docs-clone", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
+
+// Server static assertions if in prod
+if(process.env.NODE_ENV !== 'production'){
+  //Set static folder
+  app.use(express.static('client/build'));
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dir, 'client', 'build', 'index.html'));
+  });
+}
+
 
 const io = require("socket.io")(3001, {
   cors: {
