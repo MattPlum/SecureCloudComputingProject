@@ -1,5 +1,6 @@
 const mongoose = require("mongoose")
 const Document = require("./Document")
+const PORT = process.env.PORT || 3001;
 
 //mongoose connection for persisting documents
 mongoose.connect("mongodb://localhost/google-docs-clone", {
@@ -7,9 +8,9 @@ mongoose.connect("mongodb://localhost/google-docs-clone", {
   useUnifiedTopology: true,
 })
 
-const io = require("socket.io")(3001, {
+const io = require("socket.io")(PORT, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: PORT,
     methods: ["GET", "POST"],
   },
 })
