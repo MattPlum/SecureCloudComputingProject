@@ -1,8 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Secure CloudComputing Project
+<b>Description</b>: <br> Google Docs Cloud Application for CCNY Secure Cloud Computing Class.<br />
+<br>
+<b>Group Members</b> : <br> Matthew Lee, Arun Misir, Noshin Zaman, Ahmed Jahangir
 
-## Available Scripts
-
-In the project directory, you can run:
+## Available Scripts for server client
+In the project's client directory, you can run:
 
 ### `npm start`
 
