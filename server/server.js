@@ -33,6 +33,7 @@ io.on("connection", socket => {
   })
 })
 
+///
 async function findOrCreateDocument(id) {
   if (id == null) return
 
