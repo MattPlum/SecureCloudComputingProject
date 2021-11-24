@@ -27,3 +27,8 @@ You can run this to install all dependencies in package.json prior to starting t
 ### `yarn`
 
 Adjustments must be made in .env.local file to change from deployed website to localhost in order to run in development.
+
+
+## Deployed Application to Okteto Cloud Platform
+Created docker container images with docker compose and deployed the stack to okteto with okteto stack deploy.
+Application can be found at https://frontend-amisir0219.cloud.okteto.net/
