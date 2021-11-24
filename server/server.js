@@ -3,10 +3,28 @@ const Document = require("./Document")
 const PORT = process.env.PORT || 3001;
 
 //mongoose connection for persisting documents
-mongoose.connect("mongodb://localhost/google-docs-clone", {
+/*mongoose.connect("mongodb://mongo:27017/test", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-})
+})*/
+
+var connectWithRetry = function() {
+  return mongoose.connect("mongodb://mongodb:27017/test", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  },function(err) {
+      if (err) {
+          console.error('Failed to connect to mongo on startup - retrying in 1 sec', err);
+          setTimeout(connectWithRetry, 1000);
+      }
+      else {
+        console.log("connection successful to mongoDB");
+      }
+
+      
+  });
+};
+connectWithRetry();
 
 const io = require("socket.io")(PORT, {
   cors: {

@@ -3,7 +3,6 @@ import Quill from "quill"
 import "quill/dist/quill.snow.css"
 import { io } from "socket.io-client"
 import { useParams } from "react-router-dom"
-import React from 'react';
 
 const SAVE_INTERVAL_MS = 2000
 const TOOLBAR_OPTIONS = [
@@ -24,7 +23,7 @@ export default function TextEditor() {
   const [quill, setQuill] = useState()
 
   useEffect(() => {
-    const s = io("http://localhost:3001")
+    const s = io("https://backend-amisir0219.cloud.okteto.net")
     setSocket(s)
 
     return () => {
@@ -96,7 +95,8 @@ export default function TextEditor() {
       theme: "snow",
       modules: { toolbar: TOOLBAR_OPTIONS },
     })
-    q.setText("Connecting to Server...")
+    q.disable()
+    q.setText("Loading...")
     setQuill(q)
   }, [])
   return <div className="container" ref={wrapperRef}></div>
