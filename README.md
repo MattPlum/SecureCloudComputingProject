@@ -30,5 +30,7 @@ Adjustments must be made in .env.local file to change from deployed website to l
 
 
 ## Deployed Application to Okteto Cloud Platform
-Created docker container images with docker compose and deployed the stack to okteto with okteto stack deploy.
-Application can be found at https://frontend-amisir0219.cloud.okteto.net/
+Created docker container images with docker compose and deployed the stack to okteto with 
+### 'okteto stack deploy (stack name) --build'
+Application can be found at 
+### 'https://frontend-amisir0219.cloud.okteto.net/'
