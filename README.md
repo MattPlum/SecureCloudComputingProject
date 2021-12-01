@@ -21,7 +21,7 @@ Starts the server.
 
 ## Running server client as docker image containers
 
-### 'docker-compose up'
+### `docker-compose up`
 Used to build application into seperate services running in one stack and deploy them into docker image containers for local development purposes. Had to create a docker-compose.yml script. Used docker desktop to observe and manage stack deployed with 3 services(frontend, backend, mongo) in development environment. Modifications to run application as docker images can be found in the branch dev.
 
 
