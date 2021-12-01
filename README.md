@@ -4,10 +4,11 @@
 <b>Group Members</b> : <br> Matthew Lee, Arun Misir, Noshin Zaman, Ahmed Jahangir
 
 ## Available Scripts for server client
-In the project's client directory, you can run:
 
 ### 'npm i'
 Navigate to server folder and client folder in terminal and run this code independently in those directories to install required package.json dependencies for each
+
+In the project's client directory, you can run:
 
 ### `npm start`
 Runs the app.
@@ -21,11 +22,11 @@ Starts the server.
 ## Running server client as docker image containers
 
 ### 'docker-compose up'
-Used to build application into seperate services running in one stack and deploy them into docker image containers for local development purposes. Used docker desktop to observe and manage stack deployed with 3 services(frontend, backend, mongo) in development environment. Modifications to run application as docker images can be found in the branch dev.
+Used to build application into seperate services running in one stack and deploy them into docker image containers for local development purposes. Had to create a docker-compose.yml script. Used docker desktop to observe and manage stack deployed with 3 services(frontend, backend, mongo) in development environment. Modifications to run application as docker images can be found in the branch dev.
 
 
 ## Deployed Application to Okteto Cloud Platform
 Created docker container images with docker compose and deployed the stack to okteto with 
 ### okteto stack deploy (stack name) --build
-Required path modifications were made for production deployment found in the branch dbranch. Application can be found at 
+Required path modifications were made for production deployment found in the branch dbranch. Application in production can be found deployed at url
 ### https://frontend-amisir0219.cloud.okteto.net/
