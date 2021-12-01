@@ -5,7 +5,7 @@
 
 ## Available Scripts for server client
 
-### 'npm i'
+### `npm i`
 Navigate to server folder and client folder in terminal and run this code independently in those directories to install required package.json dependencies for each
 
 In the project's client directory, you can run:
@@ -27,6 +27,6 @@ Used to build application into seperate services running in one stack and deploy
 
 ## Deployed Application to Okteto Cloud Platform
 Created docker container images with docker compose and deployed the stack to okteto with 
-### okteto stack deploy (stack name) --build
+### `okteto stack deploy (stack name) --build`
 Required path modifications were made for production deployment found in the branch dbranch. Application in production can be found deployed at url
 ### https://frontend-amisir0219.cloud.okteto.net/
