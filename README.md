@@ -6,6 +6,9 @@
 ## Available Scripts for server client
 In the project's client directory, you can run:
 
+### 'npm i'
+Navigate to server folder and client folder in terminal and run this code independently in those directories to install required package.json dependencies for each
+
 ### `npm start`
 Runs the app.
 Open http://localhost:3000 to view it in the browser.
@@ -15,22 +18,14 @@ In the project's server directory, you can run:
 ### `npm run devStart`
 Starts the server.
 
+## Running server client as docker image containers
 
-## Available Scripts for NextJS(Seperate App Version)
-In the NextJS(Seperate App Version) directory, you can run:
-
-### `yarn run dev`
-Runs the app.
-Open http://localhost:3000 to view it in the browser.
-
-You can run this to install all dependencies in package.json prior to starting the app:
-### `yarn`
-
-Adjustments must be made in .env.local file to change from deployed website to localhost in order to run in development.
+### 'docker-compose up'
+Used to build application into seperate services running in one stack and deploy them into docker image containers for local development purposes. Used docker desktop to observe and manage stack deployed with 3 services(frontend, backend, mongo) in development environment. Modifications to run application as docker images can be found in the branch dev.
 
 
 ## Deployed Application to Okteto Cloud Platform
 Created docker container images with docker compose and deployed the stack to okteto with 
 ### okteto stack deploy (stack name) --build
-Application can be found at 
+Required path modifications were made for production deployment found in the branch dbranch. Application can be found at 
 ### https://frontend-amisir0219.cloud.okteto.net/
