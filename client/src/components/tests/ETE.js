@@ -28,17 +28,14 @@ async function LoadApplication(){
      }
  }
 
- async function SignIn(){
+ async function ClickButton(){
     try 
     {
         await driver.findElement(By.xpath("/html/body/div/div/button")).click();    //click the sign in button
-        let by = By.className('navbar-nav');
-        driver.wait(until.elementLocated(by,10000));
-        // await driver.wait(until.elementIsVisible(By.xpath("/html/body/div/div/nav"),1000000)); //wait for text editor to display
-        console.log("Test 1: Sign In - PASS")
+        console.log("Test 1: ClickButton - PASS")
 
     } catch (error) {
-        console.log("Test 2: Sign in - FAIL\n",error)
+        console.log("Test 2: ClickButton - FAIL\n",error)
 
     }
  }
@@ -50,4 +47,4 @@ async function LoadApplication(){
 //    build();
 
 LoadApplication();
-SignIn();
+ClickButton();
