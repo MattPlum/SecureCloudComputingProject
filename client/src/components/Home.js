@@ -15,14 +15,14 @@ import {
 } from "react-router-dom"
 import { v4 as uuidV4 } from "uuid"
 
-const Home = ({ user }) => {
+const Home = () => {
 
 
     return (
       <Router>
         <div className="home">
         {/* Navbar */}
-        <Navbar bg="light" expand="sm"/>
+        <Navbar data-testid="navbar-1" bg="light" expand="sm"/>
         <Switch>
           {/* Home page */}
           <Route path="/" exact> 
