@@ -10,7 +10,7 @@ services:
     ports:
       - "3001:3001"
     depends_on:
-      - "mongodb"
+      - "mongod"
     # links:
     #   - "mongodb"
     # expose:
@@ -24,7 +24,7 @@ services:
     ports:
       - "3000:3000"
     depends_on:
-      - "mongodb"
+      - "mongod"
     # links:
     #   - "backend"
     # expose:
