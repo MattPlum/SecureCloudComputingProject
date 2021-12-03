@@ -4,7 +4,7 @@ services:
 
 
 
-  backend:
+  backen:
     build: "./server"
     container_name: "serverdocs"
     ports:
@@ -18,7 +18,7 @@ services:
     networks:
       - "mynetwork"
 
-  frontend:
+  fronten:
     build: "./client"
     container_name: "clientdocs"
     ports:
@@ -32,7 +32,7 @@ services:
     networks:
       - "mynetwork"
 
-  mongodb:
+  mongod:
     image: "mongo:5.0.3"
     container_name: "mongo"
     restart: "unless-stopped"
