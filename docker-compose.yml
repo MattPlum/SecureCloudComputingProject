@@ -4,13 +4,13 @@ services:
 
 
 
-  backen:
+  backend:
     build: "./server"
     container_name: "serverdocs"
     ports:
       - "3001:3001"
     depends_on:
-      - "mongod"
+      - "mongodb"
     # links:
     #   - "mongodb"
     # expose:
@@ -18,13 +18,13 @@ services:
     networks:
       - "mynetwork"
 
-  fronten:
+  frontend:
     build: "./client"
     container_name: "clientdocs"
     ports:
       - "3000:3000"
     depends_on:
-      - "mongod"
+      - "mongodb"
     # links:
     #   - "backend"
     # expose:
@@ -32,7 +32,7 @@ services:
     networks:
       - "mynetwork"
 
-  mongod:
+  mongodb:
     image: "mongo:5.0.3"
     container_name: "mongo"
     restart: "unless-stopped"
