@@ -10,7 +10,7 @@ export default function NavbarComponent() {
         </Navbar.Brand>
         <Nav>
           <Nav.Link as={Link} to="/user">
-            Profile
+           <label for='profile-input' >Profile</label>
           </Nav.Link>
         </Nav>
     </Navbar>
