@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3001;
 })*/
 
 var connectWithRetry = function() {
-  return mongoose.connect("mongodb://mongodb:27017/test", {
+  return mongoose.connect("mongodb://mongod:27017/test", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   },function(err) {
