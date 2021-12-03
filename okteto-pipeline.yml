@@ -1,0 +1,4 @@
+deploy:
+  - okteto stack deploy mongodb --build
+  - okteto stack deploy serverdocs --build
+  - okteto stack deploy clinetdocs --build
