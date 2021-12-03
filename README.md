@@ -28,5 +28,7 @@ Used to build application into seperate services running in one stack and deploy
 ## Deployed Application to Okteto Cloud Platform
 Created docker container images with docker compose and deployed the stack to okteto with 
 ### `okteto stack deploy (stack name) --build`
+Modified deployment for using Okteto Pipeline directly from github for CI/CD. Added a okteto-pipeline.yml file to deployment branch dbranch.
+### From your Okteto namespace click deploy and put in the Git URL and branch you want to deploy. Once you click deploy it will automatically find the okteto-pipeline file and begin pulling the code from github and deploying your application on okteto through the pipeline.
 Required modifications were made for production deployment found in the branch dbranch. Application in production can be found deployed at url
 ### https://frontend-amisir0219.cloud.okteto.net/
