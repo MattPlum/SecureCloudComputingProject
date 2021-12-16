@@ -1,34 +1,70 @@
-# Secure CloudComputing Project
-<b>Description</b>: <br> Google Docs Cloud Application for CCNY Secure Cloud Computing Class.<br />
-<br>
-<b>Group Members</b> : <br> Matthew Lee, Arun Misir, Noshin Zaman, Ahmed Jahangir
+# Getting Started with Create React App
 
-## Available Scripts for server client
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### `npm i`
-Navigate to server folder and client folder in terminal and run this code independently in those directories to install required package.json dependencies for each
+## Available Scripts
 
-In the project's client directory, you can run:
+In the project directory, you can run:
 
 ### `npm start`
-Runs the app.
-Open http://localhost:3000 to view it in the browser.
 
-In the project's server directory, you can run:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `npm run devStart`
-Starts the server.
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-## Running server client as docker image containers
+### `npm test`
 
-### `docker-compose up`
-Used to build application into seperate services running in one stack and deploy them into docker image containers for local development purposes. Had to create a docker-compose.yml script. Used docker desktop to observe and manage stack deployed with 3 services(frontend, backend, mongo) in development environment. Modifications to run application as docker images can be found in the branch dev.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `npm run build`
 
-## Deployed Application to Okteto Cloud Platform
-Created docker container images with docker compose and deployed the stack to okteto with 
-### `okteto stack deploy (stack name) --build`
-Modified deployment for using Okteto Pipeline directly from github for CI/CD. Added a okteto-pipeline.yml file to deployment branch dbranch. Below procedure was used for deployment and replaced the above procedure.
-### From your Okteto namespace click deploy and put in the Git URL and branch you want to deploy. Once you click deploy it will automatically find the okteto-pipeline file and begin pulling the code from github and deploying your application on okteto through the pipeline.
-Required modifications were made for production deployment found in the branch dbranch. Application in production can be found deployed at url
-### https://frontend-amisir0219.cloud.okteto.net/
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

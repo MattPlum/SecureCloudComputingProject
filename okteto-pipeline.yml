@@ -1,4 +1,0 @@
-deploy:
-  - okteto stack deploy mongodb --build
-  - okteto stack deploy backend --build
-  - okteto stack deploy frontend --build
