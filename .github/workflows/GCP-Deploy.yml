@@ -2,9 +2,9 @@ name: Docker
 
 on:
   push:
-    branches: [ main ]
+    branches: [ crdeploy ]
   pull_request:
-    branches: [ main ]
+    branches: [ crdeploy ]
 
 jobs:
 
